@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.intro .slim {
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  color: hsl(234, 12%, 34%);
+}
+.intro h2 {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: -10px 0;
+  color: hsl(234, 12%, 34%);
+}
+
+.intro p {
+  margin: 20px auto;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.box-container .green-box,
+.box-container .red-box,
+.box-container .yellow-box,
+.box-container .blue-box {
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: grid;
+}
+.green-box {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  text-align: left;
+}
+.red-box {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.yellow-box {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.blue-box {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.box-content {
+  padding: 20px;
+  display: grid;
+  text-align: left;
+  line-height: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+.box-content p {
+  margin-top: -10px;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+}
+img {
+  margin-left: 200px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: column;
+  }
+  .intro {
+    font-size: 22px;
+  }
+  .intro p {
+    margin: 20px auto;
+    font-size: 22px;
+    max-width: 600px;
+  }
+
+  .box-container {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10rem;
+    height: 100%;
+  }
+  .box-container .green-box,
+  .box-container .red-box,
+  .box-container .yellow-box,
+  .box-container .blue-box {
+    width: 400px;
+    height: 300px;
+    margin: 10px 0;
+  }
+  .box-content p {
+    font-size: 18px;
+  }
+  .green-box {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    text-align: left;
+    position: relative;
+    left: 8rem;
+  }
+  .red-box {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    top: -10rem;
+    left: 10rem;
+    position: relative;
+  }
+  .yellow-box {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    top: 12rem;
+    right: 12.5rem;
+    position: relative;
+  }
+  .blue-box {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    right: 10rem;
+    position: relative;
+  }
+}
